@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Diane Lish</title>
+    <meta name="description" content="Home Page | Diane Lish | WDD 131 - Dynamic Web Fundamentals">
+    <meta name="author" content="Diane Lish">
+    <link  rel="stylesheet" href="styles/base.css">
+    <script defer src="scripts/getdates.js"></script>
 </head>
 <body>
-    <h1>WDD 131 - Lish</h1>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Diane Lish</h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/diane-lish-8b4b5529b/">LinkedIn</a>
+            <a href="https://byui.instructure.com/">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/49?lang=eng">Scripture</a>
+            <a href="index.html">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        
+        <section class="card">
+            <h2>About Me</h2>
+            <div>
+                <img src="images/profile.webp" alt="Woman with Dog">
+                <p>
+                    My name is Diane, I'm 34, and I live in Idaho. I am a mom to 4 kids and many animals, including a dog, a cat, a parrot, a frog, and 3 chickens. I strive in the chaos of a house full of life and love. If I have any free time beyond home life and school life, I enjoy spending it outdoors. Since my kids are still young, most of our outdoor time involves exploring and getting messy! I also enjoy anything that involves art, like cake decorating ( I can make some pretty cool-looking cakes), making awesome Halloween costumes, and planning fun parties for the kids. I'm working toward a Bachelor's in Software Development. Who knew that would be something I enjoy doing!? Not me! It has been a fun and rewarding challenge that I love. I'm not entirely sure where this new education adventure will take me but I am excited to see where I go.
+                </p>
+            </div>
+            <div>
+                <h3 class="state">Idaho, United States</h3>
+                <figure>
+                    <img src="images\idaho-mountains.webp" alt="Idaho Mountains">
+                    <figcaption>Idaho Mountains</figcaption>
+                </figure>
+                <p>
+                    Beautiful mountains and stunning lanscapes are just some of the reasons to love Idaho. The state capitol, Boise, is located in southwest Idaho and is surrounded by 4.7 million acres of forest. With over 100 mountain ranges and more than 3,000 miles of rivers, Idaho has endless adventures for the outdoor enthusiast. If food is the way to your heart, Idaho is famous for its potatos, huckleberries, morel mushrooms, wine, and much more. Whatever your interests Idaho is sure to be able to meet them.
+                </p>
+            </div>
+        </section>
+        <section class="card resources">
+            <h2>Web Dev Resources</h2>
+            <div class="links">
+            <a href="https://www.w3schools.com/">◾  W3Schools</a>
+            <a href="https://codepen.io/">◾  Codepen</a>
+            <a href="https://moqups.com/wireframe-tool/?gad_source=1&gclid=Cj0KCQjw9Km3BhDjARIsAGUb4nxi1ahR5-q7rwFXjY-OlAnw0otUISdi5EbJLw4wYYK8jj2g_gm_oDgaAr6GEALw_wcB">◾  Moqups Wireframe</a>
+            <a href="squoosh.app">◾  Squoosh</a>
+            <a href="https://htmlreference.io/">◾  HTML Reference</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            ©<span id="currentYear"></span> 🌷 Diane Lish | United States
+        </p>
+        <p>Last Modified <span id="lastModified"></span> </p>
+    </footer>
 </body>
 </html>
