@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -41,6 +44,7 @@ a:hover {
 
 main {
     margin: 2rem;
+    max-width: 100%;
     display: grid;
     grid-template: 1fr / 1fr .5fr;
 }
