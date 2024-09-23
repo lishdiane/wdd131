@@ -75,7 +75,12 @@ figure {
     text-align: center;
 }
 
+figcaption {
+    padding: .5rem;
+}
+
 .resources {
+    margin: 1rem;
     background-color: #F5CAC3;
     border: 1px solid #f284826c;
     border-radius: 1rem;
