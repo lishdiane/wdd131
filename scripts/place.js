@@ -8,9 +8,7 @@ let modified = document.querySelector("#lastModified");
 modified.innerHTML = document.lastModified;
 
 // calculate wind chill
-function calculateWindChill(temp, wind) {
-    return 35.74 + 0.6215 * temp - 35.75 * (wind ** 0.16) + 0.4275 * temp * (wind ** 0.16);
-}
+const calculateWindChill = (temp, wind) => 35.74 + 0.6215 * temp - 35.75 * (wind ** 0.16) + 0.4275 * temp * (wind ** 0.16);
 
 const temp = document.querySelector("#temp");
 const windSpeed = document.querySelector("#windSpeed");
