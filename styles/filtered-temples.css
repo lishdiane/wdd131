@@ -2,7 +2,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -139,10 +138,9 @@ td {
 }
 
 img {
-    flex: 2;
     margin: 1rem 0 0 0;
-    max-width: 300px;
-    height: 188px;
+    width: 268px;
+    height: 168px;
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.406);
 }
 

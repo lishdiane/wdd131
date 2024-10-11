@@ -123,7 +123,7 @@ const temples = [
                 <td>${temple.area} sq ft</td>
             </tr>
         </table>
-        <img loading="lazy" src="${temple.imageUrl}" alt="${temple.templeName} Temple">
+        <img loading="lazy" src="${temple.imageUrl}" width="268" height="168" alt="${temple.templeName} Temple">
     </div>`
   }
 
