@@ -1,0 +1,149 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    font-family: "Bad Script", cursive;
+    font-weight: 400;
+}
+
+h1, h2, h3, footer {
+    padding: 1rem;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    padding: 1rem;
+    background-color: #8ca781;
+    align-items: center;
+    min-height: 6rem;
+}
+
+h1 {
+    flex: 1.5;
+    font-size: 2rem;
+}
+
+h1, h3 {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+}
+
+#menu {
+    text-decoration: none;
+    font-size: 50px;
+    color: black;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+.navigation li {
+    display: none;
+}
+
+nav {
+    width: 100vw;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    background-color: #8ca781;
+}
+
+nav a {
+    padding: 1rem;
+    display: block;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: large;
+    color:rgb(24, 24, 65)
+}
+
+nav a, h2, table {
+    font-family: "Roboto", sans-serif;
+}
+
+.show li{
+    display: block;
+    position: relative;
+    z-index: 0;
+}
+
+#menu.show::before {
+    content: "×";
+    position: relative;
+    z-index: 1;
+}
+ 
+.navigation li:hover {
+    background-color: #0c284848;
+}
+
+.active::before {
+    content: "🔆";
+}
+
+main {
+    margin: 2rem 3rem 2rem 3rem;
+}
+
+h2 {
+    grid-column: 1/4;
+    font-size: 2rem;
+}
+
+.temples {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+    gap: 1rem;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #a3cef160;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.231);
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+table {
+    border-spacing: 1rem;
+    flex: 2;
+}
+th {
+    text-align: end;
+}
+
+td {
+    text-align: start;
+}
+
+img {
+    flex: 2;
+    margin: 1rem 0 0 0;
+    max-width: 300px;
+    height: 188px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.406);
+}
+
+footer {
+    background-color:  #8ca781;
+    line-height: 1.5rlh;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
