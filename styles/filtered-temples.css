@@ -22,11 +22,10 @@ header {
     padding: 1rem;
     background-color: #8ca781;
     align-items: center;
-    min-height: 6rem;
 }
 
 h1 {
-    flex: 1.5;
+    flex: 1;
     font-size: 2rem;
 }
 
@@ -88,12 +87,18 @@ nav a, h2, table {
     background-color: #0c284848;
 }
 
+.navLink::before { 
+    content: "🔆";
+    visibility: hidden;
+}
 .active::before {
     content: "🔆";
+    visibility: visible;
 }
 
 main {
-    margin: 2rem 3rem 2rem 3rem;
+    max-width: 100%;
+    margin: 2rem 3rem;
 }
 
 h2 {
