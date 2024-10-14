@@ -2,6 +2,13 @@ const input = document.querySelector("#favchap");
 const button = document.querySelector("button");
 const list = document.querySelector("#list");
 
+
+let chaptersArray = getChapterList() || [];
+
+chaptersArray.forEach((chapter) => {
+    displayList(chapter);
+});
+
 button.addEventListener('click', function() {
 
     if (input.value.trim() !== "") {
@@ -11,24 +18,16 @@ button.addEventListener('click', function() {
         displayList(chapterTitle);
         chaptersArray.push(chapterTitle);
 
-        setChapterList()
+        setChapterList();
         input.focus();   
     }
 });
 
-/*localStorage */
-
-const chaptersArray = localStorage.getItem(getChapterList) || [];
-
-chaptersArray.forEach(chapter => {
-    displayList(chapter);
-});
-
 function displayList(item) {
-    const li = document.createElement("li");
+    let li = document.createElement("li");
     li.textContent = item;
 
-    const liButton = document.createElement("button");
+    let liButton = document.createElement("button");
     liButton.textContent = "❌";
     liButton.classList.add("delete");
 
@@ -38,7 +37,7 @@ function displayList(item) {
     liButton.addEventListener("click", function() {
         list.removeChild(li);
         deleteChapter(li.textContent);
-        input.focus()
+        input.focus();
     })  
 }
 
@@ -51,7 +50,7 @@ function getChapterList() {
 }
 
 function deleteChapter(chapter) {
-    chapter = chapter.slice(0, chapter.length -1);
+    chapter = chapter.slice(0, chapter.length - 1);
     chaptersArray = chaptersArray.filter((item) =>  item !== chapter);
     setChapterList();
 } 
