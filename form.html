@@ -20,13 +20,13 @@
 
     <main>
         <form method="get" action="review.html">
-
-            <label class="label" for="productselector">Product Name</label>
+            <p>Fields with (<span class="red">*</span>) are required</p>
+            <label class="label" for="productselector">Product Name<span class="red">*</span></label>
                 <select id="productselector" name="product" required>
                     <option value="" selected disabled>Select a Product...</option>
                 </select>
             
-            <label class="label">Overall Rating</label>
+            <label class="label">Overall Rating<span class="red">*</span></label>
             <div class="stars">
                 <input type="radio" id="fivestar" name="star" required>
                 <label for="fivestar"></label>
@@ -44,7 +44,7 @@
                 <label for="onestar"></label>
             </div>
 
-            <label class="label" for="date">Date of Installation</label>
+            <label class="label" for="date">Date of Installation<span class="red">*</span></label>
                 <input type="date" id="date" name="date" required>
             
 

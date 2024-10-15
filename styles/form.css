@@ -71,6 +71,14 @@ input[type="submit"] {
     font-size: smaller;
 }
 
+.red {
+    color: rgb(211, 8, 8);
+}
+
+p {
+    font-size:smaller ;
+}
+
 input[type="radio"] {
     display: none;
     position: relative;
