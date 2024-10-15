@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form | WDD131 | Diane Lish</title>
+    <meta name="description" content="From, WDD 131, Diane Lish">
+    <meta name="author" content="Diane Lish">
+    <link href="styles/form.css" rel="stylesheet">
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>  
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+
+            <label class="label" for="productselector">Product Name</label>
+                <select id="productselector" name="product" required>
+                    <option value="" selected disabled>Select a Product...</option>
+                </select>
+            
+            <label class="label">Overall Rating</label>
+            <div class="stars">
+                <input type="radio" id="fivestar" name="star" required>
+                <label for="fivestar"></label>
+
+                <input type="radio" id="fourstar" name="star" required>
+                <label for="fourstar"></label>
+
+                <input type="radio" id="threestar" name="star" required>
+                <label for="threestar"></label>
+
+                <input type="radio" id="twostar" name="star" required>
+                <label for="twostar"></label>
+
+                <input type="radio" id="onestar" name="star" required>
+                <label for="onestar"></label>
+            </div>
+
+            <label class="label" for="date">Date of Installation</label>
+                <input type="date" id="date" name="date" required>
+            
+
+            <div class="features">
+                <label class="label">Which features did you find useful in the product?<br><span class="italics">(Check all that apply)</span></label>
+
+                <label class="checkbox">
+                    <input type="checkbox" id="feature1" name="feature1" value="durability">
+                Duribility</label>
+
+                <label class="checkbox">
+                    <input type="checkbox" id="feature2" name="feature2" value="easeofuse">
+                Ease of Use</label>
+
+                <label class="checkbox">
+                    <input type="checkbox" id="feature3" name="feature3" value="performance">
+                Performance</label>
+
+                <label class="checkbox">
+                    <input type="checkbox" id="feature4" name="feature4" value="design">
+                Design</label>
+            </div>
+
+            <label class="label" for="textreview">Written Review <span class="optional">(Optional)</span></label>
+            <textarea id="textreview" name="textreview" rows="5" placeholder="Write review here..."></textarea>
+
+            <label class="label" for="name">Your Name <span class="optional">(Optional)</span></label>
+            <input type="text" id="name" name="name">
+            
+            <label><input id="submit" type="submit" value="Post Review"></label>
+
+        </form>
+    </main>
+    <footer>
+        ©<span id="currentYear"></span> 🌷 Diane Lish | United States <br>
+        Last Modified <span id="lastModified"></span>
+    </footer>
+</body>
+</html>

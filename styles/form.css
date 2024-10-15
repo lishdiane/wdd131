@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    display: grid;
+    max-width: 400px;
+}
+
+header {
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(153, 141, 218, 0.755);
+    text-align: center;
+}
+
+
+form {
+    padding: 2rem;
+    width: 100%;
+    margin: 1rem 0;
+    background-color: rgba(58, 253, 217, 0.118);
+    border-radius: .5rem;
+    border: 1px solid rgba(64, 108, 100, 0.673);
+}
+
+.label {
+
+    padding: 1.5rem 0 0 0;
+}
+
+label {
+    display: block;
+}
+
+input[type="text"], 
+textarea,
+select,
+input[type="date"] {
+    width: 100%;
+}
+
+input, select{
+    min-height: 44px;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    max-height: 2rem;
+}
+
+input[type="submit"] {
+    margin: 1rem 0 0 0;
+    width: 100%;
+    font-size: large;
+    font-weight: 600;
+}
+
+.italics {
+    font-style: italic;
+    font-size: smaller;
+}
+
+.optional {
+    font-size: smaller;
+}
+
+input[type="radio"] {
+    display: none;
+    position: relative;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.stars label {
+    color: black;
+    font-size: 30px;
+}
+
+.stars label:hover {
+    text-shadow: 0 0 5px rgba(123, 111, 189, 0.997), 0 0 3px rgba(67, 57, 121, 0.997);
+}
+
+.stars label::before {
+    content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+    content: "\2605";
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    line-height: 1.5lh;
+    background-color:  rgba(153, 141, 218, 0.755);
+}
