@@ -34,7 +34,7 @@ form {
 
 label {
     display: block;
-    font-family: "roboto";
+    font-family: "Roboto", serif;
 }
 
 input[type="text"], 
