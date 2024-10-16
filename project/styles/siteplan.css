@@ -1,0 +1,32 @@
+.color1 {
+    background-color: #ff9801;
+}
+.color2 {
+    background-color:  #ff3f40;
+}
+.color3 {
+    background-color:  #fff1d4;
+}
+.color4 {
+    background-color: #ffe187;
+}
+.color5 {
+    background-color: #e5eb89;
+}
+.color6 {
+    background-color: #e1233c;
+}
+ 
+img {
+    max-width: 300px;
+}
+
+.font1 {
+    font-family: "Afacad Flux", sans-serif;
+}
+
+.font2 {
+    font-family: "Kalam", cursive;
+    font-weight: 300;
+    font-style: normal;
+}
