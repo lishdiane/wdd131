@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Health Journal</title>
+    <meta name="description" content="My Health Journal">
+    <meta name="author" content="Diane Lish">
+    <link rel="stylesheet" href="styles/my-health-journal.css">
+    <script defer src="scripts/my-health-journal.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo1.svg" alt="My Health Journal Logo" width="65">
+            <p><span class="larger">My Health Journal</span><br><span class="smaller">Health Made Easy</span></p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="my-health-journal.html">Home</a></li>
+                <li><a href="my-journal.html">My Journal</a></li>
+                <li><a href="health-tips.html">Health Tips</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>My Health Journal</h1>
+        <h2 id="subheading">START YOUR HEALTH<span class="break"></span> JOURNEY TODAY</h2>
+
+        <div class="info journal">
+            <div class="journal-info">
+                <h3>My Journal</h3>
+                <p>Use our My Journal tool to record what you eat. You can track calories, carbs, fat, and protein. My Journal even counts your macros for you.</p>
+                <a href="my-journal.html">Start Tracking!</a>
+            </div>
+            <img id="kiwi" src="images/kiwi.svg" alt="kiwi" width="150">
+        </div>
+
+        <div class="info tips">
+            <div class="tips-info">
+                <h3>Health Tips</h3>
+                <p>Need some tips to help you with your health journey? Go to our Health Tips page for advice on healthy food options, staying motivated, exercise routines and more!</p>
+                <a href="health-tips.html">Get Health Tips!</a>
+            </div>
+            <img id="orange" src="images/orange.svg" alt="orange" width="150">
+        </div>
+
+        <form action="action.html">
+            <img id="strawberry" src="images/strawberry.svg" alt="strawberry" width="80">
+            <h2>Subscribe to our newsletter</h2>
+            <p>Join for reminders and helpful tips. </p>
+
+            <label for="name">Your Name<span class="required">*</span></label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email Address<span class="required">*</span></label>
+            <input type="email" id="email" required>
+
+            <input type="submit" id="button" value="Subscribe">
+        </form>
+    </main>
+    <footer>
+        ©<span id="currentYear"></span> 🌷 Diane Lish | United States <br>
+        Last Modified <span id="lastModified"></span>
+    </footer> 
+</body>
+</html>
