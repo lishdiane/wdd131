@@ -367,6 +367,16 @@ th:nth-of-type(1), td:nth-of-type(1) {
     text-shadow: 0 0 4px var(--color1);
 }
 
+/* --------------Action Page -------------- */
+
+#action-page main{
+    display: block;
+    text-align: center;
+    padding: 2rem;
+    height: 75vh;
+}
+
+
 /* -------------- @media -------------- */
 
 /* very small screen */
