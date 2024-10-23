@@ -18,7 +18,7 @@ header {
 }
 
 
-form {
+form, #action-page main{
     padding: 2rem;
     width: 100%;
     margin: 1rem 0;
@@ -80,8 +80,7 @@ p {
 }
 
 input[type="radio"] {
-    display: none;
-    position: relative;
+    opacity: 0;
 }
 
 .stars {
@@ -93,6 +92,7 @@ input[type="radio"] {
 .stars label {
     color: black;
     font-size: 30px;
+    position: static;
 }
 
 .stars label:hover {
@@ -103,9 +103,18 @@ input[type="radio"] {
     content: "\2606";
 }
 
-.stars input:checked ~ label::before {
+.stars input[type=radio]:checked ~ label::before {
     content: "\2605";
 }
+
+#action-page main{
+    height: 75vh;
+    line-height: 1.5lh;
+    text-align: center;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
 
 footer {
     padding: 1rem;
