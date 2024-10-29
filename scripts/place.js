@@ -22,7 +22,7 @@ const windSpeedNum = parseInt(windSpeedString.replace(" mph", ""));
 
 if (tempNum <= 50 && windSpeedNum > 3) {
     windChill.innerHTML = Math.round(calculateWindChill(tempNum, windSpeedNum));
-}else {
+} else {
     windChill.innerHTML = "N/A";
 }
 

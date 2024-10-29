@@ -1,36 +1,36 @@
-@media only screen and (min-width:40em){
+@media only screen and (min-width:40em) {
 
-#menu {
-    display: none;
-}
+    #menu {
+        display: none;
+    }
 
-nav {
-    position: static;
-    width: auto;
-    flex: 1;
-}
+    nav {
+        position: static;
+        width: auto;
+        flex: 1;
+    }
 
-.navigation { 
-    display: flex;
-    justify-content: space-between;
-    background-color: #8ca781;
-}
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        background-color: #8ca781;
+    }
 
-.navigation li {
-    display: block;
-    flex: 1 1 100%;
-    display: contents;
-}
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+        display: contents;
+    }
 
-a {
-    flex: 1;
-    border-top: 1px solid #8ca781;
-    border-bottom: 1px solid #8ca781;
-}
+    a {
+        flex: 1;
+        border-top: 1px solid #8ca781;
+        border-bottom: 1px solid #8ca781;
+    }
 
-li a:hover {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-}
+    li a:hover {
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
 
 }

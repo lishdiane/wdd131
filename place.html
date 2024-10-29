@@ -1,95 +1,100 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Switzerland | WDD 131 | Diane Lish</title> 
-        <meta name="description" content="Switzerland, WDD 131, Diane Lish">
-        <meta name="author" content="Diane Lish">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="styles/place.css">
-        <script defer src="scripts/place.js"></script>
-    </head>
-    <body>
-        <header>
-            <h1>Switzerland</h1>
-        </header>
-        <main>
-            <div class="hero">
-                <picture>
-                    <source media="(min-width: 525px)" srcset="images/large.webp">
-                    <img src="images/small.webp" alt="Switzerland">
-                </picture>
-                <div class="data">
-                    <h2>Data</h2>
-                    <table>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Area:</th>
-                                <td>41,290 km²</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Population:</th>
-                                <td>8,850,000</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Capital:</th>
-                                <td>Bern</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Languages:</th>
-                                <td>German, French, Italian</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Currency:</th>
-                                <td>Swiss Franc</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Time Zone:</th>
-                                <td>CET</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Calling Code:</th>
-                                <td>+41</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Internet TLD:</th>
-                                <td>.ch</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="weather">
-                    <h2>Weather</h2>
-                    <img src="images/weather.svg" alt="Weather Icon">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <th scope="row">Temperature:</th>
-                                <td id="temp">49 ℉</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Conditions:</th>
-                                <td>Partly Cloudy</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Wind:</th>
-                                <td id="windSpeed">10 mph</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">Wind Chill:</th>
-                                <td><span id="windChill"></span> ℉</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switzerland | WDD 131 | Diane Lish</title>
+    <meta name="description" content="Switzerland, WDD 131, Diane Lish">
+    <meta name="author" content="Diane Lish">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&family=Roboto:wght@100;300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <script defer src="scripts/place.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Switzerland</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 525px)" srcset="images/large.webp">
+                <img src="images/small.webp" alt="Switzerland">
+            </picture>
+            <div class="data">
+                <h2>Data</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Area:</th>
+                            <td>41,290 km²</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Population:</th>
+                            <td>8,850,000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Capital:</th>
+                            <td>Bern</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Languages:</th>
+                            <td>German, French, Italian</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Currency:</th>
+                            <td>Swiss Franc</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Time Zone:</th>
+                            <td>CET</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Calling Code:</th>
+                            <td>+41</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Internet TLD:</th>
+                            <td>.ch</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-        </main>
-        <footer>
-            ©<span id="currentYear"></span> 🌷 Diane Lish | United States <br>
-            Last Modified <span id="lastModified"></span>
-        </footer>
-    </body>
+            <div class="weather">
+                <h2>Weather</h2>
+                <img src="images/weather.svg" alt="Weather Icon">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Temperature:</th>
+                            <td id="temp">49 ℉</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Conditions:</th>
+                            <td>Partly Cloudy</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Wind:</th>
+                            <td id="windSpeed">10 mph</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Wind Chill:</th>
+                            <td><span id="windChill"></span> ℉</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        ©<span id="currentYear"></span> 🌷 Diane Lish | United States <br>
+        Last Modified <span id="lastModified"></span>
+    </footer>
+</body>
+
 </html>
